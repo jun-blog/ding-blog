@@ -1,0 +1,234 @@
+body{
+    background: url(../img/blog.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;/*图片水平垂直平均居中*/
+    background-size: cover;
+    background-color: #CCCCCC;
+    font-family:'Helvetica Neue',Arial,'liberation Sans';
+}
+/*定义全局的div布局*/
+div#global{
+    /*设置宽度，设置百分比可以根据浏览器自适应宽度*/
+    width: 100%;
+    /*设置高度，950px是设置是实体高度，不能自适应的*/
+    height: 750px;
+    
+}
+/*定义头部布局，前面的div可以不用写，#号前面默认有个id，凡事定义了id的标签，都可以用#号来表示*/
+#heading{
+    width: 100%;
+    height: 70px;
+    color: rgb(255, 255, 255);
+    font-family:'Helvetica Neue',Arial,'liberation Sans';
+    font-size: 50px;
+}
+/* 导航条 */
+#topnav {
+  width:1190px;
+  display:inline-block;
+  overflow: hidden;
+  background-color: rgb(25, 78, 237);
+}
+#topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  border: solid 1px white;
+  padding:8px;
+  padding-left:60px;
+  padding-right:60px;
+  border-radius:8px;
+}
+
+.topnav_side{
+    margin:0;
+    float:right;
+    /*text-align: center;*/
+    color:white;
+    font-size:12px;
+    /*border: dotted 1px white;*/
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius:8px
+}
+/*主页面内容布局样式*/
+.main{
+    width:850px;
+    /*background-color:white;*/
+    float:left;/*往左浮动*/
+    margin-right:20px;
+    border-radius:6px;
+    padding:15px;
+}
+.item{
+    border-bottom:dashed 1px rgb(136, 30, 236);
+    padding-bottom:10px;
+    margin-top:14px;
+}
+    
+.item_content{
+    padding-left:10px;
+    margin:0;
+}
+
+.item_content h1{
+    font-size:16px;
+    color:#a5532d;
+    margin:0;
+}
+.item_descri{
+    font-size:14px;
+    color:rgb(128, 234, 240);
+    margin:0;
+    margin-top:20px;
+    border-left:solid 1px #ccc;
+    padding-left:10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.item_info{
+    font-size:10px;
+    color:rgb(255, 255, 255);
+    font-style:italic;
+    margin:0;
+}
+.item_info .a{
+    font-size:10px;
+    color:rgb(230, 233, 54);
+    text-decoration: none;
+    font-style:italic;
+    margin:0;
+}
+/*页面侧边布局样式*/
+.side{
+    width:240px;
+    float:right;/*往右浮动*/
+    border-radius:6px;
+    padding:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.author_Image{
+    width:180px;
+    margin:auto;
+    text-align:center;
+}
+
+.author_Image img{
+    width: 180px;
+    display: block;
+    border:solid 1px #ccc;
+    border-radius:6px;
+}
+
+.author_descri{
+    text-align:center;
+    border:solid 1px #ccc;
+    border-radius:6px;
+    background-color:#eee;
+    padding-bottom:15px;
+    padding-top:10px;
+    margin-top:5px;
+}
+
+.author_descri h4{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.author_descri p{
+    margin:0;
+    font-size:14px;
+}
+
+.top_article h3{
+    font-size:18px;
+    font-style:italic;
+    border-bottom:dashed 1px #ccc;
+    color:999;
+    padding-bottom:3px;
+}
+.top_article ul{
+    margin:0;
+    margin-top:8px;
+    padding-left:14px;
+    list-style:none;
+    background-color:#eee;
+}
+
+.top_article ul li{
+    margin:0;
+    padding-bottom:8px;
+    font-size:14px;
+    color:gray;
+}
+
+.site_info{
+    margin-top:20px;
+    border-top:solid 1px #ccc;
+    background-color:#eee;
+}
+
+.site_info p{
+    font-size:14px;
+    color:gray;
+    padding-left:60px;
+    margin:0;
+    margin-top:10px;
+}
+
+#footer{
+    clear:both;/*清除左右浮动*/
+    width:1190px;
+    height:30px;
+    margin:auto;
+    border-top:dashed 1px white;
+    margin-top:20px;
+    position:relative;/*避免底部留白*/
+    bottom:0px;
+    left:0px;
+    background-color:rgb(114, 210, 241);
+}
+
+.copyRight{
+    float:left;
+    color:white;
+}
+
+.copyRight p{
+    margin:0;
+    float:left;
+    font-size:14px;
+    padding-top:10px;
+}
+
+.site_link ul{
+    margin:0;
+    float:right;
+    list-style:none;
+    padding-top:8px;
+}
+
+.site_link ul a {
+    color:white;
+    font-size:14px;
+}
+
+.site_link ul li{
+    display:inline-block;
+    padding-right:10px;
+}
+.foot a{
+    color: rgb(150, 243, 237);
+    text-decoration: none;
+}
+.new{
+    color: rgb(243, 195, 195);
+}
